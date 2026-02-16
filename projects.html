@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Shubham Kamdar</title>
+  <meta name="description" content="Projects and things I've built — Shubham Kamdar">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Theme (prevent flash) -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('portfolio-theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SK</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="about.html" class="nav-link">About</a>
+  </div>
+
+  <main class="container">
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">A collection of things I've built and worked on.</p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid stagger-children">
+
+      <!-- Journal Service -->
+      <div class="project-card animate-in">
+        <div class="project-card-header">
+          <div class="project-icon">&#128221;</div>
+          <div class="project-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="project-image-placeholder">Screenshot coming soon</div>
+        <h3 class="project-name">Journal Service</h3>
+        <p class="project-desc">A personal journal service with custom-built features. Built my own platform to log thoughts, track habits, and reflect — tailored exactly to how I think.</p>
+        <div class="project-tags">
+          <span class="project-tag">Full-Stack</span>
+          <span class="project-tag">Personal</span>
+        </div>
+      </div>
+
+      <!-- Polymarket Backtest Engine -->
+      <div class="project-card animate-in">
+        <div class="project-card-header">
+          <div class="project-icon">&#128200;</div>
+          <div class="project-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="project-image-placeholder">Screenshot coming soon</div>
+        <h3 class="project-name">Polymarket Backtest Engine</h3>
+        <p class="project-desc">A backtesting engine for prediction market strategies on Polymarket. Simulate trades, test hypotheses, and evaluate performance against historical event data.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Finance</span>
+          <span class="project-tag">Data</span>
+        </div>
+      </div>
+
+      <!-- Card Games -->
+      <div class="project-card animate-in">
+        <div class="project-card-header">
+          <div class="project-icon">&#127183;</div>
+          <div class="project-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="project-image-placeholder">Screenshot coming soon</div>
+        <h3 class="project-name">Card Games Online</h3>
+        <p class="project-desc">Built several multiplayer card games to play with friends online — including 304, poker-based games, and Trader Titan. Real-time multiplayer with custom game logic.</p>
+        <div class="project-tags">
+          <span class="project-tag">Multiplayer</span>
+          <span class="project-tag">WebSockets</span>
+          <span class="project-tag">Games</span>
+        </div>
+      </div>
+
+      <!-- Roomies -->
+      <div class="project-card animate-in">
+        <div class="project-card-header">
+          <div class="project-icon">&#127968;</div>
+          <div class="project-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="project-image-placeholder">Screenshot coming soon</div>
+        <h3 class="project-name">Roomies</h3>
+        <p class="project-desc">Full-stack roommate matching app using Flask and Firebase. Features preference-based profiles, mutual matching, and contact sharing. Acquired 200+ users through targeted outreach.</p>
+        <div class="project-tags">
+          <span class="project-tag">Flask</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">200+ Users</span>
+        </div>
+      </div>
+
+      <!-- Drone Routing System -->
+      <div class="project-card animate-in">
+        <div class="project-card-header">
+          <div class="project-icon">&#128747;</div>
+          <div class="project-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="project-image-placeholder">Screenshot coming soon</div>
+        <h3 class="project-name">Intelligent Drone Routing</h3>
+        <p class="project-desc">Research project integrating CV and ML into pathfinding algorithms like Dijkstra's and A*. Trained a neural network for object classification with dynamic route optimization from real-time drone camera feed.</p>
+        <div class="project-tags">
+          <span class="project-tag">CV/ML</span>
+          <span class="project-tag">Research</span>
+          <span class="project-tag">Pathfinding</span>
+        </div>
+      </div>
+
+      <!-- HydroClick -->
+      <div class="project-card animate-in">
+        <div class="project-card-header">
+          <div class="project-icon">&#127807;</div>
+          <div class="project-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="project-image-placeholder">Screenshot coming soon</div>
+        <h3 class="project-name">HydroClick</h3>
+        <p class="project-desc">LA Hacks 2022 Winner. Full-stack web app helping users discover sustainable food options and eco-friendly lifestyle recommendations. Python backend with a responsive React frontend.</p>
+        <div class="project-tags">
+          <span class="project-tag">Hackathon Winner</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-text">&copy; 2026 Shubham Kamdar</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/skkamdar/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/kamdarsk23" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

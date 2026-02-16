@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Kamdar</title>
+  <meta name="description" content="Shubham Kamdar — Engineer, builder, and maker. Interested in poker, AI, financial markets, robotics, and cool tech.">
+  <meta name="author" content="Shubham Kamdar">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Theme (prevent flash) -->
+  <script>
+    (function(){
+      var t = localStorage.getItem('portfolio-theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">SK</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="about.html" class="nav-link">About</a>
+  </div>
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-greeting">Hey, I'm Shubham</h1>
+        <p class="hero-description">
+          I'm interested in poker, AI, financial markets, robotics, and just cool tech in general. Check out what I have worked on!
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/skkamdar/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/kamdarsk23" target="_blank" rel="noopener noreferrer" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/headshot.jpg" alt="Shubham Kamdar" width="180" height="180">
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section animate-in">
+      <div class="section-header">
+        <h2 class="section-title"><span class="emoji">&#128188;</span> Experience</h2>
+      </div>
+      <div class="experience-list stagger-children">
+        <div class="experience-item animate-in">
+          <div class="experience-icon">&#9889;</div>
+          <div class="experience-content">
+            <div class="experience-header">
+              <span class="experience-title">Founding Engineer</span>
+              <span class="experience-date">Aug 2024 — Aug 2025</span>
+            </div>
+            <p class="experience-company">Oncore AI · Acquired by Perceptra (General Catalyst)</p>
+          </div>
+        </div>
+        <div class="experience-item animate-in">
+          <div class="experience-icon">&#128187;</div>
+          <div class="experience-content">
+            <div class="experience-header">
+              <span class="experience-title">Intern</span>
+              <span class="experience-date">May 2024 — Aug 2024</span>
+            </div>
+            <p class="experience-company">Oncore AI · Stealth Startup</p>
+          </div>
+        </div>
+        <div class="experience-item animate-in">
+          <div class="experience-icon">&#129302;</div>
+          <div class="experience-content">
+            <div class="experience-header">
+              <span class="experience-title">Intern</span>
+              <span class="experience-date">Jan 2024 — May 2024</span>
+            </div>
+            <p class="experience-company">Sync Labs · VIP-Practicum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Interests -->
+    <section class="section animate-in">
+      <div class="section-header">
+        <h2 class="section-title"><span class="emoji">&#10024;</span> Latest Interests</h2>
+      </div>
+      <div class="interests-grid stagger-children">
+        <div class="interest-card animate-in">
+          <span class="interest-icon">&#129302;</span>
+          <div class="interest-name">Clawdbots</div>
+          <p class="interest-desc">Exploring the intersection of AI agents and robotics</p>
+        </div>
+        <div class="interest-card animate-in">
+          <span class="interest-icon">&#128200;</span>
+          <div class="interest-name">Prediction Markets</div>
+          <p class="interest-desc">Backtesting strategies and modeling event outcomes</p>
+        </div>
+        <div class="interest-card animate-in">
+          <span class="interest-icon">&#128218;</span>
+          <div class="interest-name">The Three Body Problem</div>
+          <p class="interest-desc">Currently reading Liu Cixin's sci-fi masterpiece</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-text">&copy; 2026 Shubham Kamdar</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/skkamdar/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/kamdarsk23" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
